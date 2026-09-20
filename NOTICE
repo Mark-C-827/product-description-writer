@@ -1,0 +1,23 @@
+Product Description Writer
+https://github.com/Mark-C-827/product-description-writer
+
+This project is an enhanced version of the `product-description-writer` skill
+published in the Skill Me catalog at https://github.com/SkillMedev/skills,
+which is distributed under the MIT License.
+
+  Original work Copyright (c) SkillMedev
+  Enhancements Copyright (c) 2026 contributors
+
+Preserved from the original, unchanged:
+
+  - the six-step workflow
+  - the quality bar
+  - the deliverable specification
+  - the Do NOT list, including the rule that copy must not claim anything the
+    source does not support
+
+Added in this version: an input contract, category routing, a compliance pass,
+a self-audit step, six reference documents, three scripts, and five templates.
+The original skill consists of a single SKILL.md file.
+
+The upstream project is not affiliated with and has not reviewed this version.
