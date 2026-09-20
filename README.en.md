@@ -1,5 +1,10 @@
 # Product Description Writer
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Python 3.9+](https://img.shields.io/badge/python-3.9%2B-blue.svg)](scripts/)
+[![Zero dependencies](https://img.shields.io/badge/dependencies-none-brightgreen.svg)](scripts/)
+[![Skill parts](https://img.shields.io/badge/parts-SKILL%20%2B%20refs%20%2B%20scripts%20%2B%20assets-blueviolet.svg)](#layout)
+
 Turn a dry spec sheet into product detail page (PDP) copy that sells.
 
 Enhanced from [SkillMedev/skills](https://github.com/SkillMedev/skills) (MIT;
@@ -102,6 +107,24 @@ runs the quality gate itself.
 | Compliance | one Do NOT line | dedicated redlines doc + automated warnings |
 
 The original six-step workflow, quality bar, and Do NOT list are preserved.
+
+## Contributing
+
+Read [CONTRIBUTING.md](CONTRIBUTING.md) first. In short:
+
+- Welcome: real before/after examples, uncovered categories, objections sourced
+  from actual return data, linter rules that catch real failures
+- Not welcome: more words in SKILL.md (detail belongs in `references/`),
+  invented compliance rules, urgency tactics, third-party dependencies
+
+Any script change must keep these two as-is — first exits 0, second exits 1:
+
+```bash
+python scripts/validate_pdp.py examples/sample-output-good.md --specs examples/spec-sheet.txt
+python scripts/validate_pdp.py examples/sample-output-bad.md
+```
+
+Version history lives in [CHANGELOG.md](CHANGELOG.md).
 
 ## License
 

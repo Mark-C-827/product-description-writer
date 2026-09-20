@@ -1,5 +1,10 @@
 # Product Description Writer
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Python 3.9+](https://img.shields.io/badge/python-3.9%2B-blue.svg)](scripts/)
+[![Zero dependencies](https://img.shields.io/badge/dependencies-none-brightgreen.svg)](scripts/)
+[![Skill parts](https://img.shields.io/badge/parts-SKILL%20%2B%20refs%20%2B%20scripts%20%2B%20assets-blueviolet.svg)](#目录结构)
+
 把一张枯燥的规格表，写成能卖货的商品详情页（PDP）文案。
 
 原版来自 [SkillMedev/skills](https://github.com/SkillMedev/skills)（MIT 协议，
@@ -132,7 +137,27 @@ AI 会先补问最多一个问题（通常是语气校准），然后按结构�
 
 ---
 
+## 参与贡献
+
+改动前请看 [CONTRIBUTING.md](CONTRIBUTING.md)。简单说：
+
+- 欢迎：真实产品的正反例、没覆盖的品类、来自退货数据的真实异议、能抓到真问题的 lint 规则
+- 不欢迎：往 SKILL.md 里塞更多字（细节该进 references）、编造的合规规则、
+  抄袭来的紧迫感话术、给脚本加第三方依赖
+
+改脚本必须跑通这两条，第一条 exit 0、第二条 exit 1：
+
+```bash
+python scripts/validate_pdp.py examples/sample-output-good.md --specs examples/spec-sheet.txt
+python scripts/validate_pdp.py examples/sample-output-bad.md
+```
+
+版本记录见 [CHANGELOG.md](CHANGELOG.md)。
+
 ## 许可
 
 MIT。原版版权归 SkillMedev，增强部分遵循同样的 MIT 条款。
 详见 [LICENSE](LICENSE)。
+
+基于 [SkillMedev/skills](https://github.com/SkillMedev/skills) 中的原版改写，
+保留了原作者署名与 MIT 授权。
